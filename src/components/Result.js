@@ -1,12 +1,15 @@
-import React from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
 const Result = ({score, playAgain}) => {
-    <div className="score-board">
-        <div className="score">You scored {score} / 5 correct answers!</div>
-        <button className="playBtn" onClick={playAgain}>
-            Play Again!!
-        </button>
-    </div>
+    return (
+        <div className="score-board">
+            <div className="score">You scored {score} / 5 correct answers!</div>
+            <button className="playBtn" onClick={playAgain}>
+                Play Again!!
+            </button>
+        </div>
+    );
 }
 
 export default Result;
